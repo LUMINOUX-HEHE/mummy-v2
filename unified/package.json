@@ -1,0 +1,22 @@
+{
+  "name": "unified-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Single project connecting DeepSeek Harness (engine) + OpenDesign (UX) + Awesome DSH catalog (plugins). DSH is the hub; OD drives it via stdio profile; Awesome installs into DSH.",
+  "packageManager": "pnpm@10.28.1",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "install:all": "pnpm --dir ../deepseek-harness-master install && pnpm --dir ../open-design-main install",
+    "build:dsh": "pnpm --dir ../deepseek-harness-master run build",
+    "build:bridge": "pnpm --dir ../open-design-main --filter @open-design/dsh-runtime run build",
+    "setup:bridge": "node ./scripts/setup-bridge.mjs",
+    "verify": "node ./scripts/verify.mjs",
+    "plugin:add": "node ./scripts/install-awesome.mjs",
+    "dev:dsh": "node ../deepseek-harness-master/apps/cli/lib/bin.js web --patch ../deepseek-harness-master/apps/web/tests/pin-browse-picker.overlay.yml --no-open",
+    "dev:dsh:source": "pnpm --dir ../deepseek-harness-master exec dsh --profile web",
+    "dev:od": "pnpm --dir ../open-design-main exec tools-dev run web"
+  }
+}

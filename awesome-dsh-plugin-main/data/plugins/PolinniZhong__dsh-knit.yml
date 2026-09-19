@@ -1,0 +1,6 @@
+url: https://github.com/PolinniZhong/dsh-knit
+name: PolinniZhong/dsh-knit
+category: docs
+description:
+  en: "Lists the Markdown documents that already exist anywhere in the session workspace in the DSH sidebar, ranked by relevance to the current conversation: recent messages are matched locally against document title, summary and body, with no model calls. Because the list is scanned from the workspace instead of remembered, restarting DSH or starting a new session does not empty it. Images and video are listed as well and preview in place, with relative-path images resolved and video streamed over HTTP Range."
+  zh: "把会话工作区里已有的 Markdown 文档列进 DSH 侧边栏，按与当前对话的相关性排序：用最近几条消息在本地与文档标题、摘要、正文做匹配，不调用任何模型。列表来自工作区扫描，而不是「最近打开记录」，所以重启 DSH 或新开会话都不会变空。图片与视频同样列出并可就地预览，相对路径图片真实渲染，视频走 HTTP Range 流式播放。"

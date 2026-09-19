@@ -1,0 +1,12 @@
+node_modules/
+dist/
+out/
+lib/
+types/
+*.tgz
+*.log
+.tmp/
+.dsh-home/*
+!.dsh-home/.gitkeep
+.env
+.DS_Store

@@ -1,0 +1,29 @@
+# ---- Builds / dependencies ----
+node_modules/
+lib/
+dist/
+build/
+*.tsbuildinfo
+
+# ---- Secrets & local state (NEVER commit) ----
+unified/.env
+unified/.dsh-home/
+**/.credentials.yaml
+**/.credentials.yml
+*.log
+
+# ---- Provider keys / env ----
+**/.env
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# ---- Temp / session dumps ----
+*.zst
+*.zstd
+*.jsonl
